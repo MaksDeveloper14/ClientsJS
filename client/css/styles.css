@@ -1,0 +1,300 @@
+@import './settings.css';
+@import './header.css';
+
+
+/* Сброс стилей */
+
+ul {
+	list-style: none;
+}
+
+
+/* *********************************** ТАБЛИЦА: Клиенты ******************************* */
+
+.clients {
+	margin-top: 150px;
+	padding: 0 40px;
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+}
+.clients__title {
+}
+.clients__body {
+}
+.clients__table {
+}
+/* заголовок таблицы */
+.clients__table-title {
+
+}
+.clients__table-list {
+	display: flex;
+	justify-content: space-between;
+}
+.clients__table-item {
+}
+.clients__table-item span {
+}
+.clients__table-content {
+	height: 300px;
+	background-color: #eeeeee;
+}
+.clients__table-spinner {
+}
+.clients__wrapper-btn {
+	display: flex;
+	justify-content: center;
+}
+.clients__btn {
+}
+
+.clients__table-content {
+}
+.clients__table-row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	padding: 20px;
+}
+.btn-edit-client {
+	cursor: pointer;
+}
+.btn-delete-client {
+	cursor: pointer;
+}
+.clients__table-spinner {
+}
+.clients__btn {
+	display: inline-block;
+	padding: 10px 20px;
+	border: 2px solid green;
+	color: green;
+	cursor: pointer;
+	margin-top: 40px;
+}
+.clients__btn i {
+	margin-right: 10px;
+}
+
+
+
+
+
+/* *********************************** МОДАЛЬНОЕ ОКНО: Добавиь контакт ******************************* */
+
+
+.modal-add {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+}
+.modal-add:after {
+	content: '';
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #333333;
+	opacity: .7;
+	z-index: -10;
+}
+.modal-add__window {
+	width: 600px;
+	background-color: white;
+}
+.modal-add__body {
+	padding: 30px;
+	position: relative;
+}
+.modal-add__title {
+	margin-bottom: 40px;
+}
+.modal-add__form {
+
+}
+.modal-add__text {
+	display: block;
+	height: 40px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.modal-add__btn-add {
+	text-align: center;
+	margin-bottom: 20px;
+	background-color: #eeeeee;
+	padding: 20px 0;
+	cursor: pointer;
+}
+.modal-add__btn-save {
+	text-align: center;
+	padding: 10px 20px;
+	background-color: #34C759;
+	display: inline-block;
+	cursor: pointer;
+}
+.modal-add__btn-cancel {
+	text-decoration: underline;
+	text-align: center;
+	cursor: pointer;
+}
+.modal-add__wrapper-btn-save {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+.modal-add__btn-save {
+
+}
+.modal-add__close {
+	font-size: 24px;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	cursor: pointer;
+}
+
+
+
+/* *********************************** МОДАЛЬНОЕ ОКНО: Изменить Данные ******************************* */
+
+.modal-edit {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+}
+.modal-edit:after {
+	content: '';
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #333333;
+	opacity: .7;
+	z-index: -10;
+}
+.modal-edit__window {
+	width: 600px;
+	background-color: white;
+}
+.modal-edit__body {
+	padding: 30px;
+	position: relative;
+}
+.modal-edit__text {
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+}
+.modal-edit__tel {
+}
+.modal-edit__vk {
+}
+.modal-edit__btn-add {
+}
+.modal-edit__error {
+}
+.modal-edit__wrapper-btn-save {
+	display: flex;
+	justify-content: center;
+}
+.modal-edit__btn-save {
+	display: inline-block;
+	background-color: #34C759;
+	color: white;
+	padding: 10px 30px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.modal-edit__btn-delete {
+	text-align: center;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.modal-edit__close {
+	font-size: 24px;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	cursor: pointer;
+}
+
+
+/* *********************************** МОДАЛЬНОЕ ОКНО: Удалить клиента ******************************* */
+
+
+.modal-delete {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+}
+.modal-delete:after {
+	content: '';
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #333333;
+	opacity: .7;
+	z-index: -10;
+}
+.modal-delete__window {
+	width: 600px;
+	background-color: white;
+}
+.modal-delete__body {
+	padding: 30px;
+	position: relative;
+}
+.modal-delete__title {
+	text-align: center;
+}
+.modal-delete__wrapper-btn-delete {
+	display: flex;
+	justify-content: center;
+}
+.modal-delete__btn-delete {
+	display: inline-block;
+	background-color: #34C759;
+	color: white;
+	padding: 10px 30px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.modal-delete__btn-cancel {
+	text-align: center;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.modal-delete__close {
+	font-size: 24px;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	cursor: pointer;
+}

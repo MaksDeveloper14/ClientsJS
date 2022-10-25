@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome 4 -->
+    <script src="https://use.fontawesome.com/6643cc7091.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+
+
+
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ГЛАВНЫЙ КОНТЕНТ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	<main>
+		<div class="clients">
+			<h1 class="clients__title">Клиенты</h1>
+			<div class="clients__body">
+				<div class="clients__table">
+					<!-- заголовок таблицы -->
+					<div class="clients__table-title">
+						<ul class="clients__table-list">
+							<li class="clients__table-item">
+								<span>ID</span>
+								<i><img src="img/vector2.png" alt="Стрелка вверх"></i>
+							</li>
+							<li class="clients__table-item">
+								<span>
+								Фамилия Имя Отчество
+								<i>
+									<img src="img/vector3.png" alt="Стрелка вниз">
+									<img src="img/body.png" alt="Диапазон букв">
+								</i>
+								</span>
+							</li>
+							<li class="clients__table-item">
+								<span>Дата и время создания</span>
+								<i><img src="img/vector3.png" alt="Стрелка вниз"></i>
+							</li>
+							<li class="clients__table-item">
+								<span>Последние изменения</span>
+								<i><img src="img/vector3.png" alt="Стрелка вниз"></i>
+							</li>
+							<li class="clients__table-item">
+								Контакты
+							</li>
+							<li class="clients__table-item">
+								Действия
+							</li>
+						</ul>
+					</div>
+					<div class="clients__table-content">
+
+					</div>
+					<div class="clients__table-spinner"></div>
+				</div>
+				<div class="clients__wrapper-btn">
+					<div class="clients__btn"><i><img src="img/vector1.png" alt="Добавить контакт"></i>Добавить клиента</div>
+				</div>
+			</div>
+		</div>
+	
+	</main>
+
+
+    <script src="./js/index.js"></script>
+
+
+	  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ МОДАЛЬНОЕ ОКНО: Добавить Контакт ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+		<div class="modal-add">
+			<div class="modal-add__window">
+				<div class="modal-add__body">
+					<h3 class="modal-add__title">Новый клиент</h3>
+					<form action="" class="modal-add__form">
+						<input type="text" placeholder="Фамилия*" class="modal-add__text">
+						<input type="text" placeholder="Имя*" class="modal-add__text">
+						<input type="text" placeholder="Отчество" class="modal-add__text">
+						<div class="modal-add__btn-add">
+							<i><img src="img/Vector4.png" alt="Плюс"></i>
+							Добавить контакт
+						</div>
+						<div class="modal-add__wrapper-btn-save">
+							<div class="modal-add__btn-save">Сохранить</div>
+						</div>
+						<div class="modal-add__btn-cancel">Отмена</div>
+					</form>
+					<span class="modal-add__close">X</span>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ МОДАЛЬНОЕ ОКНО: Изменить Данные ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<div class="modal-edit">
+			<div class="modal-edit__window">
+				<div class="modal-edit__body">
+					<h3>Изменить данные</h3>
+					<input type="text" placeholder="Фамилия*" class="modal-edit__text">
+					<input type="text" placeholder="Имя*" class="modal-edit__text">
+					<input type="text" placeholder="Алексеевич" class="modal-edit__text">
+					<div class="modal-edit__tel"></div>
+					<div class="modal-edit__vk"></div>
+					<div class="modal-edit__btn-add"></div>
+					<p class="modal-edit__error">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni facilis libero voluptatibus cupiditate assumenda perspiciatis cum quod ab a alias.</p>
+					<div class="modal-edit__wrapper-btn-save">
+						<div class="modal-edit__btn-save">Сохранить</div>
+					</div>
+					<div class="modal-edit__btn-delete">Удалить</div>
+					<span class="modal-edit__close">X</span>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ МОДАЛЬНОЕ ОКНО: Удалить клиента ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<div class="modal-delete">
+			<div class="modal-delete__window">
+				<div class="modal-delete__body">
+					<h3 class="modal-delete__title">Удалить клиента</h3>
+					<p>Вы действительно хотите удалить данного клиента?</p>
+					<div class="modal-delete__wrapper-btn-delete">
+						<div class="modal-delete__btn-delete">Удалить</div>
+					</div>
+					<div class="modal-delete__btn-cancel">Отмена</div>
+					<span class="modal-delete__close">X</span>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<script src="js/app.js"></script>
+
+
+</body>
+</html>
